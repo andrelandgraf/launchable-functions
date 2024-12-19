@@ -1,0 +1,31 @@
+{
+  "name": "@launch-functions/demo",
+  "license": "MIT",
+  "private": true,
+  "description": "Turn JS functions into command line tools and web UIs",
+  "authors": [
+    "Andre Landgraf <andre.timo.landgraf@gmail.com>"
+  ],
+  "scripts": {
+    "fmt": "prettier --write .",
+    "typecheck": "tsc --noEmit",
+    "dev": "npx tsx scripts/launch.ts",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@launch-functions/web": "workspace:*",
+    "launch-functions": "workspace:*",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  },
+  "prettier": {
+    "semi": true,
+    "trailingComma": "all",
+    "singleQuote": true,
+    "printWidth": 120,
+    "tabWidth": 2
+  },
+  "packageManager": "pnpm@9.12.3"
+}

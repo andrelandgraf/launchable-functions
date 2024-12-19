@@ -1,0 +1,6 @@
+node_modules
+index.ts
+main.test.ts
+main.ts
+tsconfig.json
+types.ts

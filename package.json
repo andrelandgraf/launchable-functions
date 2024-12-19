@@ -1,0 +1,16 @@
+{
+  "license": "MIT",
+  "private": true,
+  "description": "Turn JS functions into command line tools and web UIs",
+  "authors": [
+    "Andre Landgraf <andre.timo.landgraf@gmail.com>"
+  ],
+  "prettier": {
+    "semi": true,
+    "trailingComma": "all",
+    "singleQuote": true,
+    "printWidth": 120,
+    "tabWidth": 2
+  },
+  "packageManager": "pnpm@9.12.3"
+}

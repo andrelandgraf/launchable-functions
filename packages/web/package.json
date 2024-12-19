@@ -1,0 +1,75 @@
+{
+  "name": "@launch-functions/web",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "description": "Turn JS functions into web UIs. This is the web adapter for launchable-functions.",
+  "authors": [
+    "Andre Landgraf <andre.timo.landgraf@gmail.com>"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "fmt": "prettier --write .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "build": "tsc -b && vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "zod": "^3.0.0"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.6",
+    "@hono/zod-validator": "^0.4.1",
+    "@radix-ui/react-checkbox": "^1.1.2",
+    "@radix-ui/react-label": "^2.1.0",
+    "@radix-ui/react-select": "^2.1.2",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@rjsf/antd": "^5.23.2",
+    "@rjsf/core": "^5.22.4",
+    "@rjsf/utils": "^5.22.4",
+    "@rjsf/validator-ajv8": "^5.22.4",
+    "@tanstack/react-query": "^5.59.20",
+    "@types/node": "^22.9.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "hono": "^4.6.9",
+    "lucide-react": "^0.456.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^2.5.4",
+    "tailwindcss-animate": "^1.0.7",
+    "ws": "^8.18.0",
+    "zod-to-json-schema": "^3.23.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/ws": "^8.5.13",
+    "@vitejs/plugin-react": "^4.3.3",
+    "autoprefixer": "^10.4.20",
+    "globals": "^15.11.0",
+    "launch-functions": "workspace:*",
+    "postcss": "^8.4.49",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.14",
+    "tsx": "^4.7.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.4"
+  },
+  "prettier": {
+    "semi": true,
+    "trailingComma": "all",
+    "singleQuote": true,
+    "printWidth": 120,
+    "tabWidth": 2
+  },
+  "packageManager": "pnpm@9.12.3"
+}
